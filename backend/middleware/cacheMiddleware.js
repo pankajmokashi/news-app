@@ -1,11 +1,3 @@
-// // Example cache middleware (if caching happens on a different level)
-// const cacheMiddleware = (req, res, next) => {
-//     // Add caching logic if needed (this can be used to extend or modify caching behavior)
-//     next();
-// };
-
-// module.exports = cacheMiddleware;
-
 // In-memory cache object
 let cache = {};
 

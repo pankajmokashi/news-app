@@ -6,11 +6,13 @@ const BASE_URL = process.env.REACT_APP_BACKEND_BASEURL;
 // Search articles
 export const searchArticles = createAsyncThunk(
   "news/searchArticles",
-  async ({ query, page = 1, language = "en", limit = 10 }) => {
-    console.log(query, page, language);
-    const response = await axios.get(
-      `${BASE_URL}/api/search?q=${query}&lang=${language}&page=${page}&limit=${limit}`
-    );
+  async ({ query, page = 1, limit = 10 }) => {
+    const response = await axios.get(`${BASE_URL}/api/search?q=${query}`, {
+      params: {
+        page,
+        limit,
+      },
+    });
     return response.data.articles;
   }
 );

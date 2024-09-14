@@ -7,7 +7,7 @@ import Pagination from "../components/Pagination";
 
 const HomePage = () => {
   const dispatch = useDispatch();
-  const { articles, loading, currentPage } = useSelector(
+  const { articles, loading, error, currentPage } = useSelector(
     (state) => state.headlines
   );
   const { category, country, lang } = useSelector((state) => state.filter);
@@ -29,11 +29,17 @@ const HomePage = () => {
     );
   }
 
+  if (error) {
+    <div className="h-screen flex items-center justify-center">
+      Error fetching News!
+    </div>;
+  }
+
   return (
     <div>
       <Header />
       <div className="mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-        {articles.length === 0 ? (
+        {!articles && articles?.length === 0 ? (
           <div>
             No Articles found! Please try to select countries and their
             associated languages.

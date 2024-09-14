@@ -4,7 +4,6 @@ require("dotenv").config();
 const newsRoutes = require("./routes/newsRoutes");
 
 const app = express();
-const PORT = process.env.PORT;
 
 const corsOptions = {
   origin: process.env.FRONTEND_BASE_URL, // Allow only the frontend origin
@@ -23,6 +22,6 @@ app.get("/", (req, res) => {
 });
 
 // Start the server
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+app.listen(process.env.PORT, () =>
+  console.log(`Server running on ${process.env.PORT} PORT`)
+);

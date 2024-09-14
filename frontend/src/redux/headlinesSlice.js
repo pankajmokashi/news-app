@@ -13,9 +13,15 @@ export const fetchHeadlines = createAsyncThunk(
     page = 1,
     limit = 10,
   }) => {
-    const response = await axios.get(
-      `${BASE_URL}/api/headlines?category=${category}&country=${country}&lang=${lang}&page=${page}&limit=${limit}`
-    );
+    const response = await axios.get(`${BASE_URL}/api/headlines`, {
+      params: {
+        category,
+        country,
+        lang,
+        page,
+        limit,
+      },
+    });
     return response.data.articles;
   }
 );
