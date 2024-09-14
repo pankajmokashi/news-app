@@ -1,6 +1,5 @@
 # ACCONEWS
 
-## Overview
 This project consists of a News App built using the following technologies:
 - Node.js & Express: For the backend server handling API requests.
 - React: For the frontend user interface.
@@ -36,7 +35,7 @@ git clone https://github.com/pankajmokashi/news-app.git
 
 ### Backend
 ```
-cd news-app-backend
+cd backend
 ```
 
 - Install Dependencies:
@@ -60,7 +59,7 @@ npm run dev
 
 ### Frontend
 ```
-cd news-app-frontend
+cd frontend
 ```
 
 - Install Dependencies:
