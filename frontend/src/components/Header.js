@@ -16,7 +16,7 @@ const Header = ({ onCategoryChange }) => {
             className="font-bold text-xl cursor-pointer"
             onClick={() => navigate("/")}
           >
-            ACCONEWS
+            ACONEWS
           </h1>
           <div className="hidden sm:block">
             <SearchQuery />
