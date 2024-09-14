@@ -8,19 +8,19 @@ This project consists of a News App built using the following technologies:
 
 ## Pages
 1. HomePage
-Description: The homepage of the News App, which displays a list of headlines and includes a search bar. Users can see more headlines by clicking the "Show More" button.
-Features:
-- Search Bar: Allows users to search for news articles.
-- Headlines: Displays a list of current headlines.
-- Show More Button: Fetches and appends more headlines as the user scrolls or clicks the button.
-Path: /
+- Description: The homepage of the News App, which displays a list of headlines and includes a search bar. Users can see more headlines by clicking the "Show More" button.
+- Features:
+  - Search Bar: Allows users to search for news articles.
+  - Headlines: Displays a list of current headlines.
+  - Show More Button: Fetches and appends more headlines as the user scrolls or clicks the button.
+- Path: /
 
 2. SearchPage
-Description: Displays search results based on the user’s query. Includes a search bar and a "Show More" button to load additional search results.
-Features:
-- Search Bar: Allows users to perform new searches.
-- Search Results: Displays articles matching the search query.
-- Show More Button: Fetches and appends more search results.
+- Description: Displays search results based on the user’s query. Includes a search bar and a "Show More" button to load additional search results.
+- Features:
+  - Search Bar: Allows users to perform new searches.
+  - Search Results: Displays articles matching the search query.
+  - Show More Button: Fetches and appends more search results.
 - Path: /:query (Dynamic route based on search query)
 
 ## Backend Routes
