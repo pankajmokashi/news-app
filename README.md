@@ -6,6 +6,8 @@ This project consists of a News App built using the following technologies:
 - Redux: For state management on the frontend.
 - gnews.io API: For fetching news articles.
 
+- Vercel Link - https://news-app-k89a.vercel.app/
+
 ## Pages
 1. HomePage
 - Description: The homepage of the News App, which displays a list of headlines and includes a search bar. Users can see more headlines by clicking the "Show More" button.
