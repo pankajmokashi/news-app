@@ -26,8 +26,8 @@ This project consists of a News App built using the following technologies:
 - Path: /:query (Dynamic route based on search query)
 
 ## Backend Routes
-/api/headlines
-/api/search
+- /api/headlines
+- /api/search
 
 ## Setup
 - Clone the Repository:
